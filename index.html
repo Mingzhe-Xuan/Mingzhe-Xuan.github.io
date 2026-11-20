@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Xuan Mingzhe, Statistics undergraduate at USTC. Building intelligence towards the future, through AI4Material, LLM Agents, and new directions.">
+  <title>Xuan Mingzhe — Academic Homepage</title>
+  <link rel="canonical" href="https://mingzhe-xuan.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="masthead">
+    <nav class="masthead-inner" aria-label="Main navigation">
+      <a class="home-link" href="#top">Homepage</a>
+      <div class="primary-nav"><a href="#about">About Me</a><a href="#news">News</a><a href="#research">Research</a></div>
+      <button class="menu-toggle" type="button" aria-label="More navigation" aria-expanded="false" aria-controls="more-nav"><span></span><span></span><span></span></button>
+      <div class="more-nav" id="more-nav"><a href="#education">Education</a><a href="#experience">Experience</a><a href="#acknowledgements">Acknowledgements</a></div>
+    </nav>
+  </header>
+
+  <div class="page-shell">
+    <aside class="sidebar" aria-label="Profile">
+      <div class="author-avatar"><img id="portrait" src="assets/xuan-mingzhe-portrait.png" alt="Portrait of Xuan Mingzhe" width="175" height="175"></div>
+      <div class="author-content"><h1>Xuan Mingzhe</h1><p>University of Science and<br class="desktop-break"> Technology of China</p><p class="author-role">Statistics undergraduate</p></div>
+      <ul class="author-links">
+        <li><a id="sidebar-email" href="mailto:xuanmingzhe@mail.ustc.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 5l9 8 9-8"/></svg><span>Email</span></a></li>
+        <li><a id="sidebar-cv" href="assets/Xuan-Mingzhe-CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 12h7M9 16h7"/></svg><span>Curriculum Vitae</span></a></li>
+        <li><a id="sidebar-github" href="https://github.com/Mingzhe-Xuan" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 18.13V22"/></svg><span>GitHub</span></a></li>
+      </ul>
+    </aside>
+
+    <main class="page-content" id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title"><span aria-hidden="true">👋</span> About Me</h2>
+        <div id="about-copy" class="about-copy"></div>
+        <p class="research-vision"><strong>Building intelligence towards the future.</strong> Exploring <strong>AI4Material</strong>, <strong>LLM Agents</strong>, and new directions.</p>
+        <aside class="announcement" id="announcement" aria-label="Current announcement"><p><strong id="status-title"></strong></p><p><span id="status-body"></span> <a id="status-link" href="mailto:xuanmingzhe@mail.ustc.edu.cn"></a></p></aside>
+      </section>
+
+      <section id="news" aria-labelledby="news-title"><h2 class="section-title" id="news-title"><span aria-hidden="true">🔥</span> News</h2><div class="news-box" tabindex="0" role="region" aria-label="News, scroll vertically for older updates"><ul id="news-list"></ul></div></section>
+
+      <section id="research" aria-labelledby="research-title"><h2 class="section-title" id="research-title"><span aria-hidden="true">📝</span> Selected Research</h2><div class="research-toolbar"><div class="filters" id="research-filters" role="group" aria-label="Filter research"></div><span class="result-count" id="research-count" role="status" aria-live="polite"></span></div><div id="research-list"></div></section>
+
+      <section id="education" aria-labelledby="education-title"><h2 class="section-title" id="education-title"><span aria-hidden="true">📖</span> Education</h2><ul id="education-list" class="experience-list"></ul></section>
+
+      <section id="experience" aria-labelledby="experience-title"><h2 class="section-title" id="experience-title"><span aria-hidden="true">💻</span> Experience</h2><ul id="experience-list" class="experience-list"></ul></section>
+
+      <section id="acknowledgements" aria-labelledby="acknowledgements-title"><h2 class="section-title" id="acknowledgements-title"><span aria-hidden="true">🙏</span> Acknowledgements</h2><p>I’m grateful to the people who have guided my research and shared their ideas with me.</p><div id="thanks-list" class="thanks-grid"></div></section>
+
+      <footer class="page-footer"><span>© <span id="copyright-year"></span> Xuan Mingzhe</span><div><button id="edit-status" type="button" hidden>Edit announcement</button><a href="#top">Back to top</a></div></footer>
+    </main>
+  </div>
+
+  <noscript><p class="noscript">Enable JavaScript to view all content, or <a href="assets/Xuan-Mingzhe-CV.pdf">read the CV</a>.</p></noscript>
+
+  <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-title"><div class="dialog-toolbar"><h2 id="figure-title">Research figure</h2><button type="button" id="close-figure" class="close-dialog" aria-label="Close research figure">×</button></div><div class="figure-canvas" tabindex="0" aria-label="Research figure"><img id="figure-full-image" alt=""></div><a id="figure-original" target="_blank" rel="noopener">Open original image</a></dialog>
+
+  <dialog id="status-dialog" class="status-dialog" aria-labelledby="editor-title"><form id="status-form"><div class="dialog-toolbar"><h2 id="editor-title">Edit announcement</h2><button type="button" id="close-status" class="close-dialog" aria-label="Close announcement editor">×</button></div><p class="editor-note">Save a draft in this browser, or download content.js and replace the project file to keep your changes.</p><label>Headline<input name="title" maxlength="160" required></label><label>Message<textarea name="body" rows="3" maxlength="600" required></textarea></label><label>Link text<input name="linkText" maxlength="100" required></label><label>Link<input name="href" maxlength="300" required></label><div class="form-row"><label>Background color<input type="color" name="color"></label><label class="checkbox-label"><input type="checkbox" name="visible"> Show announcement</label></div><p id="editor-feedback" role="status" aria-live="polite"></p><div class="editor-actions"><button type="button" id="reset-status">Reset</button><button type="button" id="download-content">Download content.js</button><button type="submit" class="save-button">Save preview</button></div></form></dialog>
+</body>
+</html>
