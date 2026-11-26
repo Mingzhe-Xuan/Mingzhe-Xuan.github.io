@@ -46,7 +46,7 @@ window.SITE_CONTENT = {
       id: "hierapg", shortName: "HieraPG", category: "AI4Material", status: "Working paper", role: "Project lead", date: "Sep 2026 — Present",
       title: "Hierarchical Point-Group Experts for Crystal Property Prediction",
       affiliation: "DeePTB Lab · University of Science and Technology of China",
-      summary: "HieraPG uses relationships between crystal point groups to improve tensor property prediction. A shared O(3)-equivariant backbone and a hierarchy of point-group experts let related crystal classes share features while retaining symmetry-specific information.",
+      summary: "How can a model share knowledge across related crystal point groups while respecting their distinct symmetry constraints? HieraPG predicts crystal tensor properties using a shared O(3)-equivariant backbone and geometry-conditioned routing over a hierarchy of point-group experts.",
       image: "assets/hierapg-pg-experts.png", imageAlt: "HieraPG overview: shared encoding and expert fusion, inside a point-group expert, and geometry-conditioned routing", imageCaption: "HieraPG · method overview",
       details: [
         "A crystal’s symmetry constrains its tensor properties. HieraPG organizes experts by group–subgroup relationships so that higher-symmetry experts can serve related crystal classes and lower-symmetry experts can capture the additional degrees of freedom.",
@@ -60,7 +60,7 @@ window.SITE_CONTENT = {
       id: "prototype-align", shortName: "Prototype Align", category: "LLM Agents", status: "Under review", role: "Project lead", date: "Jul 2026 — Aug 2026",
       title: "Prototype-Based Latent Alignment for Multi-Agent Systems",
       affiliation: "BREATHE AI · Nanyang Technological University",
-      summary: "Can latent reasoning improve by relaxing exact next-token probability weighting while still using pretrained model parameters? Prototype Align maps an LLM’s hidden state to a continuous input embedding by mixing precomputed prototypes, without additional training.",
+      summary: "Is weighting embeddings by exact next-token probabilities the best way to support continuous latent reasoning while staying grounded in pretrained model parameters? Prototype Align maps an LLM’s hidden state to a continuous input embedding by mixing precomputed prototypes, without additional training.",
       image: "assets/prototype-align-overview.png", imageAlt: "Prototype Align method overview showing text alignment and offline and online prototype alignment", imageCaption: "Prototype Align · method overview", imageOriginal: "assets/prototype-align-overview.pdf",
       details: [
         "Exact-Soft Align replaces token sampling with a continuous average of receiver embeddings, with weights set by the sender’s next-token probabilities. Those probabilities are learned for discrete prediction. The exact weighted average may therefore be a suboptimal input for the next step of latent reasoning.",
