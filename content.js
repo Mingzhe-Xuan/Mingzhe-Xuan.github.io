@@ -47,7 +47,7 @@ window.SITE_CONTENT = {
       title: "Hierarchical Point-Group Experts for Crystal Property Prediction",
       affiliation: "DeePTB Lab · University of Science and Technology of China",
       summary: "Sharing knowledge across crystal symmetries through hierarchical point-group experts and geometry-conditioned routing on an O(3)-equivariant backbone.",
-      image: "assets/hierapg-overview.png", imageAlt: "HieraPG method overview with a shared O(3) backbone, parallel experts, and geometry-conditioned routing", imageCaption: "HieraPG · method overview",
+      image: "assets/hierapg-pg-experts.png", imageAlt: "HieraPG overview: shared encoding and expert fusion, inside a point-group expert, and geometry-conditioned routing", imageCaption: "HieraPG · method overview",
       details: [
         "Led the development of HieraPG to address limited sharing across crystal symmetries.",
         "Reduced mean absolute error by 16.07%, 6.35%, and 5.56% on electronic dielectric tensors, elastic stiffness tensors, and Born effective charges, respectively, relative to the strongest baseline for each task."
