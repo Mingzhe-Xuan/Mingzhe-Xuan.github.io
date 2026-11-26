@@ -15,7 +15,7 @@ window.SITE_CONTENT = {
     email: "xuanmingzhe@mail.ustc.edu.cn",
     github: "https://github.com/Mingzhe-Xuan",
     cv: "assets/Xuan-Mingzhe-CV.pdf",
-    image: "assets/xuan-mingzhe-portrait.png",
+    image: "assets/xuan-mingzhe-outdoor-portrait.jpg",
     imageAlt: "Portrait of Xuan Mingzhe",
     imageCaption: "Xuan Mingzhe",
     lead: "Hello! My name is Xuan Mingzhe. I am a Statistics undergraduate at the School of Gifted Young, University of Science and Technology of China, with graduation expected in July 2028.",
