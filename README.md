@@ -36,6 +36,6 @@ Publish the `main` branch from `/` using GitHub Pages. `.nojekyll` is included b
 
 ## Sources and design
 
-Research, education, and experience facts come from the owner’s supplied revised CV. Mentor acknowledgements and GitHub identity were confirmed by the owner. The portrait and research figures were supplied by the owner; the original PDFs are preserved.
+Education and experience details come from the revised CV. Mentor acknowledgements and GitHub identity were confirmed by the owner. The portrait and research figures were supplied by the owner. The original CV and figure PDFs are preserved.
 
 The page organization and visual reference is [Xuyan Ye’s homepage](https://xuyanye.com/). This site is independently implemented with Xuan Mingzhe’s own content and assets.

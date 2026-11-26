@@ -1,5 +1,5 @@
 /* Edit this file to update the website. No build step is required.
- * Research and experience facts: user-provided “Xuan Mingzhe - revised.tex”.
+ * Education, experience, and project metadata: user-provided “Xuan Mingzhe - revised.tex”.
  * Mentor names and acknowledgements: explicitly supplied by the user.
  * News dates describe starts already stated in that CV; no acceptance is implied.
  * Image paths are relative to index.html. Figures and portrait were supplied by the user.
@@ -46,28 +46,30 @@ window.SITE_CONTENT = {
       id: "hierapg", shortName: "HieraPG", category: "AI4Material", status: "Working paper", role: "Project lead", date: "Sep 2026 — Present",
       title: "Hierarchical Point-Group Experts for Crystal Property Prediction",
       affiliation: "DeePTB Lab · University of Science and Technology of China",
-      summary: "Sharing knowledge across crystal symmetries through hierarchical point-group experts and geometry-conditioned routing on an O(3)-equivariant backbone.",
+      summary: "HieraPG uses relationships between crystal point groups to improve tensor property prediction. A shared O(3)-equivariant backbone and a hierarchy of point-group experts let related crystal classes share features while retaining symmetry-specific information.",
       image: "assets/hierapg-pg-experts.png", imageAlt: "HieraPG overview: shared encoding and expert fusion, inside a point-group expert, and geometry-conditioned routing", imageCaption: "HieraPG · method overview",
       details: [
-        "Led the development of HieraPG to address limited sharing across crystal symmetries.",
-        "Reduced mean absolute error by 16.07%, 6.35%, and 5.56% on electronic dielectric tensors, elastic stiffness tensors, and Born effective charges, respectively, relative to the strongest baseline for each task."
+        "A crystal’s symmetry constrains its tensor properties. HieraPG organizes experts by group–subgroup relationships so that higher-symmetry experts can serve related crystal classes and lower-symmetry experts can capture the additional degrees of freedom.",
+        "A geometry-conditioned router combines experts for the crystal’s own point group and its ancestors. Their outputs are mapped back to a common feature space and fused with the backbone features, preserving end-to-end O(3) equivariance.",
+        "HieraPG reduces mean absolute error by 16.07% on electronic dielectric tensors, 6.35% on elastic stiffness tensors, and 5.56% on Born effective charges relative to the strongest baseline for each task."
       ],
       metrics: [{ value: "16.07%", label: "lower MAE · dielectric tensors" }, { value: "6.35%", label: "lower MAE · elastic tensors" }, { value: "5.56%", label: "lower MAE · Born charges" }],
-      metricNote: "Relative to the strongest baseline for each task, as reported in the supplied CV.", links: []
+      metricNote: "Ablations examine how point-group feature processing, hierarchical sharing, and geometry-conditioned routing contribute to prediction accuracy. Additional experiments cover ionic dielectric response and phonon density of states.", links: []
     },
     {
       id: "prototype-align", shortName: "Prototype Align", category: "LLM Agents", status: "Under review", role: "Project lead", date: "Jul 2026 — Aug 2026",
       title: "Prototype-Based Latent Alignment for Multi-Agent Systems",
       affiliation: "BREATHE AI · Nanyang Technological University",
-      summary: "Expressive, efficient latent communication between LLM agents through nonlinear, training-free alignment with precomputed receiver-space prototypes.",
+      summary: "Can latent reasoning improve by relaxing exact next-token probability weighting while still using pretrained model parameters? Prototype Align maps an LLM’s hidden state to a continuous input embedding by mixing precomputed prototypes, without additional training.",
       image: "assets/prototype-align-overview.png", imageAlt: "Prototype Align method overview showing text alignment and offline and online prototype alignment", imageCaption: "Prototype Align · method overview", imageOriginal: "assets/prototype-align-overview.pdf",
       details: [
-        "Proposed and implemented Prototype Align, using orthogonal random features to precompute receiver-space prototypes without vocabulary-sized online operations.",
-        "Improved average accuracy across six benchmarks by 3.19 and 3.15 percentage points over the strongest baseline under fixed-budget and entropy-based stopping on Qwen3-8B, respectively.",
-        "Achieved approximately 6× faster per-step alignment than Exact-Soft Align."
+        "Exact-Soft Align replaces token sampling with a continuous average of receiver embeddings, with weights set by the sender’s next-token probabilities. Those probabilities are learned for discrete prediction. The exact weighted average may therefore be a suboptimal input for the next step of latent reasoning.",
+        "Prototype Align uses orthogonal random features to probe the sender’s unembedding space. For each probe, nearby token unembeddings give more weight to the corresponding receiver embeddings, forming a prototype that can be cached offline. At inference, the sender’s current hidden state determines how to mix the prototypes, avoiding a full-vocabulary computation.",
+        "A finite set of random features generally induces a different weighting over the vocabulary. For a fixed query and a finite vocabulary, the prototype mixture converges in probability to Exact-Soft Align as the number of features grows.",
+        "On Qwen3-8B, Prototype Align improves average accuracy across six benchmarks by 3.19 percentage points with a fixed budget and 3.15 percentage points with entropy-based stopping, compared with the strongest baseline in each setting. In the sequential setup, the per-step alignment time drops from 1.54 ms to 0.26 ms compared with Exact-Soft Align, about a 6× speedup."
       ],
       metrics: [{ value: "+3.19 pp", label: "accuracy · fixed budget" }, { value: "+3.15 pp", label: "accuracy · entropy stopping" }, { value: "≈6×", label: "faster per-step alignment" }],
-      metricNote: "Accuracy averaged over six benchmarks on Qwen3-8B; speed compared with Exact-Soft Align. Results from the supplied CV.", links: []
+      metricNote: "Cross-model experiments evaluate latent communication in both directions between Qwen3-8B and Qwen3-14B, which share a vocabulary.", links: []
     }
   ],
   experience: [
